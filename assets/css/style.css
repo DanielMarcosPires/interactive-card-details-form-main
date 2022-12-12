@@ -8,6 +8,8 @@
 *{
     font-family: 'Space Grotesk', sans-serif;
     list-style: none;
+}
+body{
     overflow-x: hidden;
 }
 .attribution { font-size: 11px; text-align: center; }
