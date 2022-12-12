@@ -1,0 +1,8 @@
+.conteudo{
+    display: grid;
+    grid-template: 
+    'a1 a2'
+    'a1 a2'/50% 50%;
+   gap: 8px;
+   align-items: center;
+}

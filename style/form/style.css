@@ -1,0 +1,149 @@
+.formulario{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 2em 0;
+  grid-area: a2;
+}
+label{
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.formulario__label{
+  transition: 0.2s;
+  cursor: pointer;
+}
+.form1,.form2{
+  position: relative;
+  width: 100%;
+}
+.formulario__label .formulario__entrada{
+  text-align: center;
+  filter: blur(1.2px);
+  width: 320px;
+}
+.formulario__label::after{
+  content: 'Cardholder Name';
+  color: var(--preto);
+  position: absolute;
+  left: 0;
+  width: 200px;
+
+}
+.formulario__label:focus-within:after{
+  color: transparent;
+  border-bottom: none;
+  transform: translateY(-20px);
+  transition: 0.2s;
+}
+.formulario__label--numero .formulario__entrada{
+  width: 320px;
+  filter: blur(1.2px);
+  
+}
+.formulario__label--numero::after{
+  content: 'Card Number';
+  color: var(--preto);
+  filter: blur();
+  position: absolute;
+  left: 0;
+  width: 200px;
+
+}
+.formulario__label--numero:focus-within:after{
+  color: transparent;
+  border-bottom: none;
+  transform: translateY(-20px);
+  transition: 0.2s;
+}
+.formulario__label--data .formulario__entrada{
+  width: 150px;
+  filter: blur(1.2px);
+
+}
+.formulario__label--data::after{
+  content: 'Exp. Date';
+  color: var(--preto);
+  position: absolute;
+  left: 0;
+  width: 200px;
+
+}
+.formulario__label--data:focus-within:after{
+  color: transparent;
+  border-bottom: none;
+  transform: translateY(-20px);
+  transition: 0.2s;
+}
+.formulario__label--mesAno::after{
+  content: '(MM/YY)';
+  color: var(--preto);
+  position: absolute;
+  left: 0;
+  width: 200px;
+
+}
+.formulario__label--mesAno:focus-within:after{
+  color: transparent;
+  border-bottom: none;
+  transform: translateY(-20px);
+  transition: 0.2s;
+}
+.formulario__label--cvc .formulario__entrada{
+  filter: blur(1.2px);
+}
+.formulario__label--cvc::after{
+  content: 'cvc';
+  color: var(--preto);
+  position: absolute;
+  left: 0;
+  width: 200px;
+
+}
+.formulario__label--cvc:focus-within:after{
+  color: transparent;
+  border-bottom: none;
+  transform: translateY(-20px);
+  transition: 0.2s;
+}
+.formulario div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 8px 0;
+  width: 100%;
+}
+.formulario__entrada{
+  color: #0000004b;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 8px 0;
+  border-bottom: solid 1px var(--azulRoxo);
+}
+.formulario__entrada:focus{
+  color: #000;
+  border: solid 1px var(--azulRoxo);
+  filter: blur(0);
+  user-select: text;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.formulario__botao{
+  background: var(--violetaEscuro);
+  padding: 8px 0;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  margin: 8px 0;
+  width: 100%;
+}
+.formulario__botao:hover{
+  background: #481467;
+  transition: 0.2s;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <main class="conteudo">
+    <div class="coluna">
+      <ul class="lista">
+        <li class="cartao versoDocartao">
+          <div>
+            <input type="checkbox" id="ativo" class="ativo">
+            <label for="ativo" class="versoDocartao__cvc">
+              XXX
+            </label >
+          </div>
+        </li>
+        <li class="cartao frenteDocartao">
+          <img class="logoDocartao" src="assets/images/card-logo.svg" alt>
+          <h2 class="numeroDocartao">0000 0000 0000 0000</h2>
+          <div class="infoDocartao">
+            <p class="nomeDocartao">Card Name</p>
+            <p class="numeroDovencimento">00/00</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <form class="formulario">
+        <div class="form1">
+          <label class="formulario__label" for="name ">
+          <input class="formulario__entrada nomeInformacao" type="text" id="name">
+          </label>
+          <label class="formulario__label--numero" for="number ">
+          <input class="formulario__entrada nomeInformacao" type="text" id="number">
+          </label>
+        </div>
+        <div class="form2">
+          <label class="formulario__label--data" for="data ">
+            <input class="formulario__entrada" type="datetime" id="data">
+            </label>
+          <label class="formulario__label--mesAno" for="mesano ">
+            <input class="formulario__entrada " type="date" id="mesano">
+              </label>
+          <label class="formulario__label--cvc" for="cvc ">
+            <input class="formulario__entrada preenchido" type="text" id="cvc ">
+          </label>
+        </div>
+      <button type="button" class="formulario__botao" id="send">Confirm</button>
+      </form>
+
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

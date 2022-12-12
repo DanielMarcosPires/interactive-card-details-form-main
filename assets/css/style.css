@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+/* Acima importei a fonte */
+@import url('../../style/lateral/style.css');
+@import url('../../style/carteira/style.css');
+@import url('../../style/form/style.css');
+@import url('../../style/conteudo/style.css');
+/* Arquivos css acima */
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    list-style: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--azulRoxo); }
+
+:root{
+    /* primario */
+    --gradient:hsl(249, 99%, 64%),hsl(278, 94%, 30%);
+    --azulRoxo:#3e52a3;
+    /* neutro */
+    --branco:#fff;
+    --brancoSecundario:hsl(270, 3%, 87%);
+    --cinza:hsl(279, 6%, 55%);
+    --violetaEscuro:#21092f;
+
+}
