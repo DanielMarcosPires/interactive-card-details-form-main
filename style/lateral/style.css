@@ -1,6 +1,6 @@
 .coluna{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     background: url('../../assets/images/bg-main-desktop.png');
     background-repeat: no-repeat;
     align-items: center;
@@ -9,6 +9,15 @@
     width: 100%;
     height: 100vh;
 }
+@media screen and (max-width:800px){
+    .coluna{
+        justify-content: space-around;
+        background:linear-gradient(80deg,var(--gradient));
+        padding: 8px 0;
+        width: 100vw;
+        height: 25vh;
+    }
+}
 .lista{
     display: flex;
     flex-direction: column;
@@ -16,14 +25,38 @@
     gap: 8px;
     height: 100%;
 }
+@media screen and (max-width:800px){
+    .lista{
+        flex-direction: row;
+        padding: 5px 0;
+        width: 1000px;
+    }
+    .cartao{
+        width: 100%;
+    }
+    .versoDocartao{
+        position: absolute;
+        left: 280px;
+    }
+    .frenteDocartao{
+        position: absolute;
+        right: 290px;
+        top:30px;
+        z-index: 2;
+    }
+}
+
 .cartao{
     background: transparent;
     box-shadow: 0 0 8px #000;
+    text-align: center;
     position: relative;
     padding: 0 8px;
     border-radius: 8px;
+    width: 380px;
     height: 200px;
 }
+
 .versoDocartao{
     background: var(--brancoSecundario);
     background-image: url('../../assets/images/bg-card-back.png');

@@ -6,3 +6,12 @@
    gap: 8px;
    align-items: center;
 }
+
+@media screen and (max-width:800px) {
+    .conteudo{
+        grid-template: 
+        'a1 a1'
+        'a2 a2'/50% 50%;
+        align-items: center;
+    }
+}
