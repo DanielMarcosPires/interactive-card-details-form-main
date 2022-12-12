@@ -12,6 +12,13 @@
     margin: 1.5em auto;
   }
 }
+@media screen and (max-width:500px){
+  .formulario{
+    position: relative;
+    top: 50px;
+    margin: 1.5em auto;
+  }
+}
 label{
   position: relative;
   text-transform: uppercase;
