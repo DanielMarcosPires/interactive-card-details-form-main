@@ -18,17 +18,17 @@
         <li class="cartao versoDocartao">
           <div>
             <input type="checkbox" id="ativo" class="ativo">
-            <label for="ativo" class="versoDocartao__cvc">
+            <label for="ativo" class="versoDocartao__cvc cvc">
               XXX
             </label >
           </div>
         </li>
         <li class="cartao frenteDocartao">
           <img class="logoDocartao" src="assets/images/card-logo.svg" alt>
-          <h2 class="numeroDocartao">0000 0000 0000 0000</h2>
+          <h2 class="numeroDocartao idCartao">0000 0000 0000 0000</h2>
           <div class="infoDocartao">
-            <p class="nomeDocartao">Card Name</p>
-            <p class="numeroDovencimento">00/00</p>
+            <p class="nomeDocartao proprietario">Card Name</p>
+            <p class="numeroDovencimento vencimento">00/00</p>
           </div>
         </li>
       </ul>
@@ -36,23 +36,24 @@
       <form class="formulario">
         <div class="form1">
           <label class="formulario__label" for="name ">
-          <input class="formulario__entrada nomeInformacao" type="text" id="name">
+          <input class="formulario__entrada Informacao" type="text" id="name">
           </label>
           <label class="formulario__label--numero" for="number ">
-          <input class="formulario__entrada nomeInformacao" type="text" id="number">
+          <input class="formulario__entrada Informacao" minlength="16" maxlength="16" required type="text" id="number">
           </label>
         </div>
         <div class="form2">
           <label class="formulario__label--data" for="data ">
-            <input class="formulario__entrada" type="datetime" id="data">
+            <input class="formulario__entrada Informacao" maxlength="2" type="datetime" id="data">
             </label>
           <label class="formulario__label--mesAno" for="mesano ">
-            <input class="formulario__entrada " type="date" id="mesano">
+            <input class="formulario__entrada Informacao" type="datetime" id="mesano">
               </label>
           <label class="formulario__label--cvc" for="cvc ">
-            <input class="formulario__entrada preenchido" type="text" id="cvc ">
+            <input class="formulario__entrada Informacao" minlength="3" maxlength="3" type="text" id="cvc ">
           </label>
         </div>
+        <input type="reset" class="formulario__botao" value="Apagar o formulário">
       <button type="button" class="formulario__botao" id="send">Confirm</button>
       </form>
 

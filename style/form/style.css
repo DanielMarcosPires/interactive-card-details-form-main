@@ -76,6 +76,9 @@ label{
   transform: translateY(-20px);
   transition: 0.2s;
 }
+.formulario__label--mesAno .formulario__entrada{
+  width: 150px;
+}
 .formulario__label--mesAno::after{
   content: '(MM/YY)';
   color: var(--preto);
