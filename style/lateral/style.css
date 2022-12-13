@@ -46,8 +46,22 @@
     background-repeat: no-repeat;
 }
 .frenteDocartao{
+    position: relative;
     background-image: url('../../assets/images/bg-card-front.png');
     color: #fff;
+}
+.frenteDocartao::after{
+    content: url('../../assets/images/visa\(2\).svg');
+    align-items: center;
+
+    padding: 8px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg);
+    top: 20px;
+    width: 20%;
+    
 }
 .versoDocartao__cvc{
     background: var(--branco);
